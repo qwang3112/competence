@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dragonflies Competence Analysis</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>Mamba</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="temp.html"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/index">Home</a></li>
+          <li><a href="/analysis">Data analysis</a></li>
+          <li><a href="/focus">Focus area</a></li>
+          <li><a href="/plan">Personal plan</a></li>
+          <li><a href="/team">Team</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+ <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <section class="counts section-bg">
+      <div class="container">
+        <table class="table table-striped table-vcenter">
+            <tr>
+              <td style="width:15%;font-size: 23px;background-color: #00CCFF" >name</td>
+              <td style="width:40%; text-align: center;font-size: 23px;background-color: #00CCFF">learning plan</td>
+              <td style="width:35%; text-align: center;font-size: 23px;background-color: #00CCFF">output product</td>
+              <td style="width:10%; text-align: center;font-size: 23px;background-color: #00CCFF">state</td>
+          </tr>
+          {% for plan in plans %}
+          <tr>
+              <td style="width:13%; display: table-cell;vertical-align: middle" >{{plan[0]}}</td>
+              <td style="width:42%; display: table-cell;vertical-align: middle">{{plan[1]}}</td>
+              <td style="width:35%; display: table-cell;vertical-align: middle">{{plan[2]}}</td>
+              <td style="width:10%; display: table-cell;vertical-align: middle">{{plan[3]}}
+<!--                <input type='text' name='pla_result' id='pla_result' style="width:120%">-->
+              </td>
+          </tr>
+
+          {% endfor %}
+
+
+      </table>
+  </div>
+</section><!-- End Counts Section -->
+
+
+<!--        <div class="row no-gutters">-->
+<!--          <div class="col-lg-6 video-box">-->
+<!--            <img src="static/assets/img/personalplan.png" class="img-fluid" alt="">-->
+
+<!--          </div>-->
+
+<!--        </div>-->
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="static/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="static/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
